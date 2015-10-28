@@ -14,6 +14,7 @@
 		4BFB61201BE1847E009D5CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB611E1BE1847E009D5CF6 /* LaunchScreen.storyboard */; };
 		4BFB612B1BE1847E009D5CF6 /* ListViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB612A1BE1847E009D5CF6 /* ListViewTestTests.swift */; };
 		4BFB61361BE1847E009D5CF6 /* ListViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB61351BE1847E009D5CF6 /* ListViewTestUITests.swift */; };
+		4BFB61441BE1848E009D5CF6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB61431BE1848E009D5CF6 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4BFB61311BE1847E009D5CF6 /* ListViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFB61351BE1847E009D5CF6 /* ListViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTestUITests.swift; sourceTree = "<group>"; };
 		4BFB61371BE1847E009D5CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BFB61431BE1848E009D5CF6 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		4BFB61141BE1847E009D5CF6 /* ListViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				4BFB61431BE1848E009D5CF6 /* ListView.swift */,
 				4BFB61151BE1847E009D5CF6 /* AppDelegate.swift */,
 				4BFB61171BE1847E009D5CF6 /* ViewController.swift */,
 				4BFB61191BE1847E009D5CF6 /* Main.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				4BFB61181BE1847E009D5CF6 /* ViewController.swift in Sources */,
 				4BFB61161BE1847E009D5CF6 /* AppDelegate.swift in Sources */,
+				4BFB61441BE1848E009D5CF6 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
