@@ -19,7 +19,7 @@ listView.reset() //Clears the screen
 This view container will be very laggy when there are more than 100 tags on screen. It is due to the expense of drawing UILabel. I don't see an use case where an iOS app would need to display 100 UILabels at same time so it shouldn't be a big deal.
 
 
-#Screenshots
+#In Action
 
 [![](https://dl.dropboxusercontent.com/s/u4zhtf3lj31p7ti/Photo%20Oct%2028%2C%206%2037%2033%20PM.png
 )](https://dl.dropboxusercontent.com/s/u4zhtf3lj31p7ti/Photo%20Oct%2028%2C%206%2037%2033%20PM.png
