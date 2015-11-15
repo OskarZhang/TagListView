@@ -29,3 +29,6 @@ This view container will be very laggy when there are more than 100 tags on scre
 )
 
 [![](https://dl.dropboxusercontent.com/s/dgrudpysyd70ta9/Simulator%20Screen%20Shot%20Oct%2028%2C%202015%2C%206.42.43%20PM.png)](https://dl.dropboxusercontent.com/s/dgrudpysyd70ta9/Simulator%20Screen%20Shot%20Oct%2028%2C%202015%2C%206.42.43%20PM.png)
+
+# License:
+MIT
