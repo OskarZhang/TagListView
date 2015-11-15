@@ -2,7 +2,7 @@
 When I tried to find something on github that displays words in their own cells, I couldn't find anything. This is why I made a view container for displaying tags. It serves a simple purpose so I elected not to let users implement delegate functions, insetad they can just call the built-in functions of the view container to add tags and reset the view. 
 
 # Usage:
-* Initialization
+* Initialize the container with a frame for the container. Note that this is not the frame for an individual tag. 
 ``` 
 let listView = TagListView(frame: CGRectMake(0,0,100,200))
 ```
