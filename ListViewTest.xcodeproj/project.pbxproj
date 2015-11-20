@@ -12,9 +12,7 @@
 		4BFB611B1BE1847E009D5CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB61191BE1847E009D5CF6 /* Main.storyboard */; };
 		4BFB611D1BE1847E009D5CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB611C1BE1847E009D5CF6 /* Assets.xcassets */; };
 		4BFB61201BE1847E009D5CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB611E1BE1847E009D5CF6 /* LaunchScreen.storyboard */; };
-		4BFB612B1BE1847E009D5CF6 /* ListViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB612A1BE1847E009D5CF6 /* ListViewTestTests.swift */; };
-		4BFB61361BE1847E009D5CF6 /* ListViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB61351BE1847E009D5CF6 /* ListViewTestUITests.swift */; };
-		4BFB61441BE1848E009D5CF6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB61431BE1848E009D5CF6 /* ListView.swift */; };
+		4BFB61441BE1848E009D5CF6 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB61431BE1848E009D5CF6 /* TagListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4BFB61121BE1847E009D5CF6 /* ListViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFB61121BE1847E009D5CF6 /* TagListView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagListView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFB61151BE1847E009D5CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BFB61171BE1847E009D5CF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4BFB611A1BE1847E009D5CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,12 +41,8 @@
 		4BFB611F1BE1847E009D5CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BFB61211BE1847E009D5CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BFB61261BE1847E009D5CF6 /* ListViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BFB612A1BE1847E009D5CF6 /* ListViewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTestTests.swift; sourceTree = "<group>"; };
-		4BFB612C1BE1847E009D5CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BFB61311BE1847E009D5CF6 /* ListViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BFB61351BE1847E009D5CF6 /* ListViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTestUITests.swift; sourceTree = "<group>"; };
-		4BFB61371BE1847E009D5CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BFB61431BE1848E009D5CF6 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		4BFB61431BE1848E009D5CF6 /* TagListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				4BFB61141BE1847E009D5CF6 /* ListViewTest */,
-				4BFB61291BE1847E009D5CF6 /* ListViewTestTests */,
-				4BFB61341BE1847E009D5CF6 /* ListViewTestUITests */,
 				4BFB61131BE1847E009D5CF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +81,7 @@
 		4BFB61131BE1847E009D5CF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BFB61121BE1847E009D5CF6 /* ListViewTest.app */,
+				4BFB61121BE1847E009D5CF6 /* TagListView.app */,
 				4BFB61261BE1847E009D5CF6 /* ListViewTestTests.xctest */,
 				4BFB61311BE1847E009D5CF6 /* ListViewTestUITests.xctest */,
 			);
@@ -99,7 +91,7 @@
 		4BFB61141BE1847E009D5CF6 /* ListViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				4BFB61431BE1848E009D5CF6 /* ListView.swift */,
+				4BFB61431BE1848E009D5CF6 /* TagListView.swift */,
 				4BFB61151BE1847E009D5CF6 /* AppDelegate.swift */,
 				4BFB61171BE1847E009D5CF6 /* ViewController.swift */,
 				4BFB61191BE1847E009D5CF6 /* Main.storyboard */,
@@ -110,30 +102,12 @@
 			path = ListViewTest;
 			sourceTree = "<group>";
 		};
-		4BFB61291BE1847E009D5CF6 /* ListViewTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				4BFB612A1BE1847E009D5CF6 /* ListViewTestTests.swift */,
-				4BFB612C1BE1847E009D5CF6 /* Info.plist */,
-			);
-			path = ListViewTestTests;
-			sourceTree = "<group>";
-		};
-		4BFB61341BE1847E009D5CF6 /* ListViewTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4BFB61351BE1847E009D5CF6 /* ListViewTestUITests.swift */,
-				4BFB61371BE1847E009D5CF6 /* Info.plist */,
-			);
-			path = ListViewTestUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4BFB61111BE1847E009D5CF6 /* ListViewTest */ = {
+		4BFB61111BE1847E009D5CF6 /* TagListView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BFB613A1BE1847E009D5CF6 /* Build configuration list for PBXNativeTarget "ListViewTest" */;
+			buildConfigurationList = 4BFB613A1BE1847E009D5CF6 /* Build configuration list for PBXNativeTarget "TagListView" */;
 			buildPhases = (
 				4BFB610E1BE1847E009D5CF6 /* Sources */,
 				4BFB610F1BE1847E009D5CF6 /* Frameworks */,
@@ -143,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = ListViewTest;
+			name = TagListView;
 			productName = ListViewTest;
-			productReference = 4BFB61121BE1847E009D5CF6 /* ListViewTest.app */;
+			productReference = 4BFB61121BE1847E009D5CF6 /* TagListView.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4BFB61251BE1847E009D5CF6 /* ListViewTestTests */ = {
@@ -220,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BFB61111BE1847E009D5CF6 /* ListViewTest */,
+				4BFB61111BE1847E009D5CF6 /* TagListView */,
 				4BFB61251BE1847E009D5CF6 /* ListViewTestTests */,
 				4BFB61301BE1847E009D5CF6 /* ListViewTestUITests */,
 			);
@@ -261,7 +235,7 @@
 			files = (
 				4BFB61181BE1847E009D5CF6 /* ViewController.swift in Sources */,
 				4BFB61161BE1847E009D5CF6 /* AppDelegate.swift in Sources */,
-				4BFB61441BE1848E009D5CF6 /* ListView.swift in Sources */,
+				4BFB61441BE1848E009D5CF6 /* TagListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFB612B1BE1847E009D5CF6 /* ListViewTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFB61361BE1847E009D5CF6 /* ListViewTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		4BFB61281BE1847E009D5CF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BFB61111BE1847E009D5CF6 /* ListViewTest */;
+			target = 4BFB61111BE1847E009D5CF6 /* TagListView */;
 			targetProxy = 4BFB61271BE1847E009D5CF6 /* PBXContainerItemProxy */;
 		};
 		4BFB61331BE1847E009D5CF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BFB61111BE1847E009D5CF6 /* ListViewTest */;
+			target = 4BFB61111BE1847E009D5CF6 /* TagListView */;
 			targetProxy = 4BFB61321BE1847E009D5CF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -481,13 +453,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BFB613A1BE1847E009D5CF6 /* Build configuration list for PBXNativeTarget "ListViewTest" */ = {
+		4BFB613A1BE1847E009D5CF6 /* Build configuration list for PBXNativeTarget "TagListView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BFB613B1BE1847E009D5CF6 /* Debug */,
 				4BFB613C1BE1847E009D5CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BFB613D1BE1847E009D5CF6 /* Build configuration list for PBXNativeTarget "ListViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +469,7 @@
 				4BFB613F1BE1847E009D5CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BFB61401BE1847E009D5CF6 /* Build configuration list for PBXNativeTarget "ListViewTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +478,7 @@
 				4BFB61421BE1847E009D5CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,10 +16,11 @@ class ViewController: UIViewController {
         return true
     }
     
+    var listView:TagListView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var listView = TagListView(frame: CGRectMake(0, self.view.frame.height - 200, self.view.frame.width, 200))
+         listView = TagListView(frame: CGRectMake(0, self.view.frame.height - 200, self.view.frame.width, 200))
         self.view.addSubview(listView)
         listView.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1.0)
         listView.layer.borderColor = UIColor.blackColor().CGColor
@@ -42,6 +43,12 @@ class ViewController: UIViewController {
         listView.addTag("\(i)", target: self, tapAction: "tap:", longPressAction: "longPress:",backgroundColor: color,textColor: UIColor.whiteColor())
         }
     }
+    
+    
+    @IBAction func deleteFirstTag(sender: AnyObject) {
+        listView.removeTagWithIndex(0)
+    }
+    
     func tap(sender:UIGestureRecognizer)
     {
         let label = (sender.view as! UILabel)

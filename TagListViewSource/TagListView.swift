@@ -17,10 +17,10 @@ class TagListView:UIScrollView,UIGestureRecognizerDelegate,UIScrollViewDelegate
     var hashtagsOffset:UIEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 0)
     var containerView:UIView!
     
+    
     override init(frame:CGRect)
     {
         super.init(frame: frame)
-        print("list initiated")
         numberOfRows = Int(Double(frame.height) / 30)
         containerView = UIView(frame: self.frame)
 
@@ -34,9 +34,10 @@ class TagListView:UIScrollView,UIGestureRecognizerDelegate,UIScrollViewDelegate
         super.init(coder: aDecoder)
     }
     
+    
+    
     func addTag(text:String,target:AnyObject,tapAction:Selector,longPressAction:Selector,backgroundColor:UIColor,textColor:UIColor)
     {
-        print("tag added")
         let label = UILabel()
         label.layer.cornerRadius = 5
         label.clipsToBounds = true
@@ -75,7 +76,7 @@ class TagListView:UIScrollView,UIGestureRecognizerDelegate,UIScrollViewDelegate
                 }
                 else
                 {
-                    var newPoint = self.getIndex()
+                    var newPoint = self.getNextIndex()
                     if (newPoint.x + label.frame.width) >= self.frame.width
                     {
                         self.currentRow++
@@ -91,17 +92,12 @@ class TagListView:UIScrollView,UIGestureRecognizerDelegate,UIScrollViewDelegate
                     })
                     self.tags.append(label)
                 }
-            
-        
-        
-        
     }
     
     
-    func isOutofBounds(newPoint:CGPoint,labelFrame:CGRect)
+    private func isOutofBounds(newPoint:CGPoint,labelFrame:CGRect)
     {
         let bottomYLimit = newPoint.y + labelFrame.height
-        print("bottomYLimit \(bottomYLimit)")
         if bottomYLimit > self.contentSize.height
         {
             self.containerView.frame = CGRectMake(self.containerView.frame.origin.x, self.containerView.frame.origin.y, self.containerView.frame.width, self.containerView.frame.height + 25)
@@ -109,11 +105,10 @@ class TagListView:UIScrollView,UIGestureRecognizerDelegate,UIScrollViewDelegate
         }
     }
     
-    func getIndex() -> CGPoint
+    func getNextIndex() -> CGPoint
     {
         
         let y = CGFloat(currentRow * 30) + hashtagsOffset.top
-        print("y val:\(y) and current row: \(currentRow)")
         let lastTagFrame = tags[tags.count-1].frame
         let x = lastTagFrame.origin.x + lastTagFrame.width + 5
         
@@ -122,22 +117,49 @@ class TagListView:UIScrollView,UIGestureRecognizerDelegate,UIScrollViewDelegate
     
     func reset()
     {
+        for tag in tags
+        {
+            tag.removeFromSuperview()
+        }
         tags = []
         currentRow = 0
-        print("reset to \(currentRow)")
-        for subview in self.subviews
+    }
+    
+    func removeTagWithName(name:String)
+    {
+        for (index,tag) in tags.enumerate()
         {
-            if subview.isKindOfClass(UILabel)
+            if tag.text! == name
             {
-            (subview ).removeFromSuperview()
+                removeTagWithIndex(index)
             }
         }
     }
     
-    
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
+    func removeTagWithIndex(index:Int)
+    {
+        tags[index].removeFromSuperview()
+        
+        reLayoutTagsFromIndex(index)
+        tags.removeAtIndex(index)
     }
+    
+    private func reLayoutTagsFromIndex(index:Int)
+    {
+        let animation:()->() =
+        {
+            var previousFrame = self.tags[index].frame
+            for i in index+1...self.tags.count - 1
+            {
+                let temp = self.tags[i].frame
+                self.tags[i].frame = previousFrame
+                previousFrame = temp
+            }
+        }
+        UIView.animateWithDuration(0.3, animations: animation)
+    }
+    
+    
 
     
     
