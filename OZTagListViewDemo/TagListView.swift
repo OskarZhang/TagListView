@@ -13,19 +13,16 @@ class TagListView:UIScrollView
     var numberOfRows = 0
     var currentRow = 0
     var tags = [UILabel]()
-    var containerView:UIView!
-    
+
     var hashtagsOffset:UIEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 0)
-    var rowHeight:CGFloat = 30 //height of rows
+    var rowHeight:CGFloat = 40 //height of rows
     var tagHorizontalPadding:CGFloat = 5.0 // padding between tags horizontally
     var tagVerticalPadding:CGFloat = 5.0 // padding between tags vertically
-    var tagCombinedMargin:CGFloat = 6.0 // margin of left and right combined, text in tags are by default centered.
+    var tagCombinedMargin:CGFloat = 10.0 // margin of left and right combined, text in tags are by default centered.
     override init(frame:CGRect)
     {
         super.init(frame: frame)
         numberOfRows = Int(frame.height / rowHeight)
-        containerView = UIView(frame: self.frame)
-        self.addSubview(containerView)
         self.showsVerticalScrollIndicator = false
         self.scrollEnabled = true
     }
@@ -45,10 +42,12 @@ class TagListView:UIScrollView
         label.backgroundColor = backgroundColor
         label.text = text
         label.textColor = textColor
+        label.font = UIFont.systemFontOfSize(18)
         label.sizeToFit()
         label.textAlignment = NSTextAlignment.Center
         self.tags.append(label)
-        
+        label.layer.shouldRasterize = true
+        label.layer.rasterizationScale = UIScreen.mainScreen().scale
         //process actions
         if tapAction != nil
         {
@@ -85,7 +84,6 @@ class TagListView:UIScrollView
         let bottomYLimit = newPoint.y + labelFrame.height
         if bottomYLimit > self.contentSize.height
         {
-            self.containerView.frame = CGRectMake(self.containerView.frame.origin.x, self.containerView.frame.origin.y, self.containerView.frame.width, self.containerView.frame.height + rowHeight - tagVerticalPadding)
             self.contentSize = CGSizeMake(self.contentSize.width, self.contentSize.height + rowHeight - tagVerticalPadding)
         }
     }

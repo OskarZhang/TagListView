@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ListViewTest.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>TagListView.xcscheme</key>
+		<key>OZTagListViewDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -17,17 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4BFB61111BE1847E009D5CF6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4BFB61251BE1847E009D5CF6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4BFB61301BE1847E009D5CF6</key>
+		<key>4B7289BD1C007A9100A61B18</key>
 		<dict>
 			<key>primary</key>
 			<true/>

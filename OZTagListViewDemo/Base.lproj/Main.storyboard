@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OZTagListViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag List View Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cq-BE-tSk">
+                                <rect key="frame" x="105" y="20" width="391" height="41"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="dgh-R1-fUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github.com/oskarzhang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sch-Gn-Wv3">
+                                <rect key="frame" x="210" y="69" width="181" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Yv9-ve-dig"/>
+                                    <constraint firstAttribute="width" constant="181" id="ae8-2y-wWM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.2607323232323232" green="0.2607323232323232" blue="0.2607323232323232" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ch-5E-DFa">
+                                <rect key="frame" x="240" y="118" width="118" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Remove First Tag"/>
+                                <connections>
+                                    <action selector="deleteFirstTag:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Em-Yb-fXj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgN-hX-Lcb">
+                                <rect key="frame" x="225" y="156" width="150" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Remove Multiple Tags"/>
+                                <connections>
+                                    <action selector="deleteMultipleTags:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AR2-I4-qU4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHw-sw-vpo">
+                                <rect key="frame" x="306" y="194" width="64" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="znk-bS-R2a"/>
+                                </constraints>
+                                <state key="normal" title="Add Tag"/>
+                                <connections>
+                                    <action selector="addTag:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugj-Pk-NUj"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAW-fp-O6P">
+                                <rect key="frame" x="228" y="195" width="70" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="ctm-9g-H8y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JAW-fp-O6P" firstAttribute="centerX" secondItem="VgN-hX-Lcb" secondAttribute="centerX" constant="-37" id="2nD-SG-zLp"/>
+                            <constraint firstItem="WHw-sw-vpo" firstAttribute="centerX" secondItem="VgN-hX-Lcb" secondAttribute="centerX" constant="38" id="B16-AE-3Jc"/>
+                            <constraint firstItem="sch-Gn-Wv3" firstAttribute="centerX" secondItem="6cq-BE-tSk" secondAttribute="centerX" id="DK9-UZ-rog"/>
+                            <constraint firstItem="8ch-5E-DFa" firstAttribute="top" secondItem="sch-Gn-Wv3" secondAttribute="bottom" constant="28" id="Jn6-kE-R0Y"/>
+                            <constraint firstItem="8ch-5E-DFa" firstAttribute="centerX" secondItem="sch-Gn-Wv3" secondAttribute="centerX" constant="-1.5" id="KWR-df-nVY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6cq-BE-tSk" secondAttribute="trailing" constant="84" id="WKT-Z2-c72"/>
+                            <constraint firstItem="VgN-hX-Lcb" firstAttribute="centerX" secondItem="8ch-5E-DFa" secondAttribute="centerX" constant="1" id="bMC-7k-zea"/>
+                            <constraint firstItem="6cq-BE-tSk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="cWR-1T-3Tc"/>
+                            <constraint firstItem="6cq-BE-tSk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fK1-2T-Tgj"/>
+                            <constraint firstItem="JAW-fp-O6P" firstAttribute="top" secondItem="VgN-hX-Lcb" secondAttribute="bottom" constant="9" id="nol-BM-UA6"/>
+                            <constraint firstItem="WHw-sw-vpo" firstAttribute="top" secondItem="VgN-hX-Lcb" secondAttribute="bottom" constant="8" id="rU8-hP-mxv"/>
+                            <constraint firstItem="VgN-hX-Lcb" firstAttribute="top" secondItem="8ch-5E-DFa" secondAttribute="bottom" constant="8" id="zFE-pa-QV2"/>
+                            <constraint firstItem="sch-Gn-Wv3" firstAttribute="top" secondItem="6cq-BE-tSk" secondAttribute="bottom" constant="8" id="zjb-Ji-GNq"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="textField" destination="JAW-fp-O6P" id="Ykm-v2-rZS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="330"/>
+        </scene>
+    </scenes>
+</document>

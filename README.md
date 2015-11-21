@@ -6,6 +6,18 @@ When I tried to find something on github that displays words in their own cells,
 ``` 
 let listView = TagListView(frame: CGRectMake(0,0,100,200))
 ```
+
+* Apperance 
+``` 
+listView.hashtagsOffset:UIEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 0)
+listView.rowHeight:CGFloat = 40 //height of rows
+listView.tagHorizontalPadding:CGFloat = 5.0 // padding between tags horizontally
+listView.tagVerticalPadding:CGFloat = 5.0 // padding between tags vertically
+listView.tagCombinedMargin:CGFloat = 10.0 // margin of left and right combined, text in tags are by default centered.
+```
+
+
+
 * Add Tags and their corresponding selector
 ```
 listView.addTag("YOLO", target: self, tapAction: "tap:", longPressAction: "longPress:",backgroundColor: UIColor.whiteColor(),textColor: UIColor.blackColor()) 
@@ -18,8 +30,8 @@ listView.reset() //Clears the screen
 # Customization:
 To customize the appearance of the label, you can just dive into the addTag() func to change however you want your UILabel to look like. 
 
-# Known Issues:
-This view container will be very laggy when there are more than 100 tags on screen. It is due to the expense of drawing UILabel. I don't see an use case where an iOS app would need to display 100 UILabels at same time so it shouldn't be a big deal.
+# Known Issue:
+This View Container still scrolls poorly when there are large volume of labels on screen, due to the fact that I did not implement some sort of a caching mechanism for the UIScrollView. 
 
 
 #In Action:

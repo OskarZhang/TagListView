@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  ListViewTest
+//  OZTagListViewDemo
 //
-//  Created by Oskar Zhang on 10/28/15.
-//  Copyright © 2015 OZ. All rights reserved.
+//  Created by Oskar Zhang on 11/21/15.
+//  Copyright © 2015 OskarZhang. All rights reserved.
 //
 
 import UIKit

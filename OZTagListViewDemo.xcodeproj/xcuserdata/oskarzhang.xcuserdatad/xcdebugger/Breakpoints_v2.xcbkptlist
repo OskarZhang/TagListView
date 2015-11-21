@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ListViewTest/TagListView.swift"
-            timestampString = "469747927.668859"
+            filePath = "../../OZTagListViewDemo/OZTagListViewDemo/ViewController.swift"
+            timestampString = "469794856.962805"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "reLayoutTagsFromIndex(_:)"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "addTag(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
