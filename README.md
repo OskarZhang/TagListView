@@ -22,10 +22,19 @@ listView.tagCombinedMargin:CGFloat = 10.0 // margin of left and right combined, 
 ```
 listView.addTag("YOLO", target: self, tapAction: "tap:", longPressAction: "longPress:",backgroundColor: UIColor.whiteColor(),textColor: UIColor.blackColor()) 
 ``` 
+* Remove Tags
+``` 
+listView.removeTagWithIndex() //Remove tag at a given index
+listView.removeTagWithName() //Remove tag with a name
+listView.removeMultipleTagsWithIndices(indexSet:Set<Int>) //Bulk Remove with a set of Indices.
+```
+
 * Reset View
 ``` 
 listView.reset() //Clears the screen
 ```
+
+
 
 # Customization:
 To customize the appearance of the label, you can just dive into the addTag() func to change however you want your UILabel to look like. 
