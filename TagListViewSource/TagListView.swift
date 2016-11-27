@@ -38,6 +38,11 @@ class TagListView:UIScrollView
         self.isScrollEnabled = true
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layoutTagsFromIndex(index: 0)
+    }
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
