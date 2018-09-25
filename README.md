@@ -1,3 +1,4 @@
+STATUS: DEPRECATED
 # TagListView
 When I tried to find something on github that displays words in their own cells, I couldn't find anything. This is why I made a view container for displaying tags. It serves a simple purpose so I elected not to let users implement delegate functions, insetad they can just call the built-in functions of the view container to add tags and reset the view. 
 
